@@ -8,6 +8,9 @@ BUG-REPORT-ADDRESS=netperf-feedback@netperf.org
 AC_PREREQ([2.71])
 AC_INIT([netperf],[2.7.1])
 
+# For splice and sched_affinity
+AC_GNU_SOURCE
+
 # Inherit compiler flags from the environment...
 CFLAGS="${CFLAGS:=}"
 CXXFLAGS="${CXXFLAGS:=}"
