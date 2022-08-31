@@ -484,8 +484,8 @@ static int client_port_min = 5000;
 static int client_port_max = 65535;
 
  /* different options for the sockets				*/
-
-int
+ /* defined in nettest_bsd */
+extern int
   loc_nodelay,		/* don't/do use NODELAY	locally		*/
   rem_nodelay,		/* don't/do use NODELAY remotely	*/
   loc_sndavoid,		/* avoid send copies locally		*/
